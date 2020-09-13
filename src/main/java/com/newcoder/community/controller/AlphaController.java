@@ -1,12 +1,15 @@
 package com.newcoder.community.controller;
 
+import com.newcoder.community.util.CommunityUtil;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.ModelAndView;
 
+import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.*;
@@ -37,9 +40,7 @@ public class AlphaController {
 
         // 返回响应数据
         response.setContentType("text/html;charset=utf-8");
-        try (
-                PrintWriter writer = response.getWriter();
-        ) {
+        try (PrintWriter writer = response.getWriter()) {
             writer.write("<h1>牛客网</h1>");
         } catch (IOException e) {
             e.printStackTrace();
@@ -129,6 +130,44 @@ public class AlphaController {
 
         return list;
     }
+    //服务端发送cookie给浏览器
+    @RequestMapping(path = "/cookie/set", method = RequestMethod.GET)
+    @ResponseBody
+    public String sendCookie(HttpServletResponse response) {
+        Cookie cookie = new Cookie("cookie", CommunityUtil.generateUUID());
+        //设置保留时间 单位s
+        cookie.setMaxAge(10 * 60);
+        //设置响应路径
+        cookie.setPath("/community/alpha");
+        response.addCookie(cookie);
+        return "success send cookie";
+    }
+
+    //浏览器发送cookie到服务端接收cookie值
+    @RequestMapping(path = "/cookie/get", method = RequestMethod.GET)
+    @ResponseBody
+    public String getCookie(@CookieValue("cookie") String code) {
+        System.out.println(code);
+        return "success get cookie";
+    }
+
+    //session 浏览器数据保存在服务端  请求头Cookie拿到sessionId
+    @RequestMapping(path = "/session/set", method = RequestMethod.GET)
+    @ResponseBody
+    public String setSession(HttpSession session) {
+        session.setAttribute("password","123456");
+        return "success set session";
+    }
+
+    //session 服务端记录客户端信息 请求头Cookie拿到sessionId
+    @RequestMapping(path = "/session/get", method = RequestMethod.GET)
+    @ResponseBody
+    public String getSession(HttpSession session) {
+        System.out.println(session.getAttribute("password"));
+        return "getSession";
+    }
+
+
 
 
 }
