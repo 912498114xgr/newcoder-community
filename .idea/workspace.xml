@@ -1,16 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="98010c9e-cde7-42e9-8c65-90f18d717f16" name="Default Changelist" comment="rafeal：Cookie和Session的使用">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/newcoder/community/config/KaptchaConfig.java" afterDir="false" />
+    <list default="true" id="98010c9e-cde7-42e9-8c65-90f18d717f16" name="Default Changelist" comment="rafeal：验证码">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/newcoder/community/dao/LoginTicketMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/newcoder/community/entity/LoginTicket.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/community.iml" beforeDir="false" afterPath="$PROJECT_DIR$/community.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/newcoder/community/controller/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/newcoder/community/controller/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/static/js/global.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/static/js/global.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/newcoder/community/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/newcoder/community/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/newcoder/community/util/CommunityConstant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/newcoder/community/util/CommunityConstant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/site/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/site/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/newcoder/community/controller/AlphaController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/newcoder/community/controller/AlphaController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/newcoder/community/MapperTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/newcoder/community/MapperTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/com/newcoder/community/controller/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/newcoder/community/controller/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/newcoder/community/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/newcoder/community/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/newcoder/community/util/CommunityConstant.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/newcoder/community/util/CommunityConstant.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/static/js/global.js" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/static/js/global.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/site/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/site/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/newcoder/community/MapperTests.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/newcoder/community/MapperTests.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +111,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MapperTests.testInsertUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MapperTests.testInsertLoginTicket" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="community" />
       <extension name="coverage">
         <pattern>
@@ -114,7 +121,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.newcoder.community" />
       <option name="MAIN_CLASS_NAME" value="com.newcoder.community.MapperTests" />
-      <option name="METHOD_NAME" value="testInsertUser" />
+      <option name="METHOD_NAME" value="testInsertLoginTicket" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -161,11 +168,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MapperTests.testInsertLoginTicket" />
         <item itemvalue="JUnit.MailTests.testHtmlMail" />
         <item itemvalue="JUnit.MailTests.testTextMail" />
         <item itemvalue="JUnit.MapperTests.testSelectPosts" />
         <item itemvalue="JUnit.MapperTests.testSelectUser (1)" />
-        <item itemvalue="JUnit.MapperTests.testInsertUser" />
       </list>
     </recent_temporary>
   </component>
@@ -197,7 +204,8 @@
       <workItem from="1599664221063" duration="2318000" />
       <workItem from="1599879182405" duration="3801000" />
       <workItem from="1599894944373" duration="13623000" />
-      <workItem from="1599964153452" duration="8487000" />
+      <workItem from="1599964153452" duration="8599000" />
+      <workItem from="1600092261171" duration="5451000" />
     </task>
     <task id="LOCAL-00001" summary="rafeal：项目第一次提交">
       <created>1599922428397</created>
@@ -220,7 +228,14 @@
       <option name="project" value="LOCAL" />
       <updated>1599980618576</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="rafeal：验证码">
+      <created>1600007745090</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1600007745090</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,9 +244,14 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="rafeal：项目第一次提交" />
     <MESSAGE value="rafeal：Cookie和Session的使用" />
-    <option name="LAST_COMMIT_MESSAGE" value="rafeal：Cookie和Session的使用" />
+    <MESSAGE value="rafeal：验证码" />
+    <option name="LAST_COMMIT_MESSAGE" value="rafeal：验证码" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="872" y="367" key="#HTTP_Proxy" timestamp="1600096981232">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="872" y="367" key="#HTTP_Proxy/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1600096981232" />
     <state x="1085" y="409" key="#com.intellij.ide.util.MemberChooser" timestamp="1599377454021">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
@@ -240,68 +260,68 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1054" y="558" width="451" height="293" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1599377183318" />
-    <state x="777" y="289" width="1322" height="1039" key="CommitChangelistDialog2" timestamp="1599980721481">
+    <state x="777" y="289" width="1322" height="1039" key="CommitChangelistDialog2" timestamp="1600007781446">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="777" y="289" width="1322" height="1039" key="CommitChangelistDialog2/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1599980721481" />
+    <state x="777" y="289" width="1322" height="1039" key="CommitChangelistDialog2/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1600007781446" />
     <state x="2737" y="112" width="1305" height="843" key="CommitChangelistDialog2/0.0.2560.1400/2560.0.1920.1040@2560.0.1920.1040" timestamp="1599980632977" />
     <state x="1060" y="455" key="FileChooserDialogImpl" timestamp="1599921905584">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1060" y="455" key="FileChooserDialogImpl/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1599921905584" />
-    <state width="1877" height="226" key="GridCell.Tab.0.bottom" timestamp="1599983433895">
+    <state width="2517" height="142" key="GridCell.Tab.0.bottom" timestamp="1600097402262">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1877" height="226" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1599983433895" />
-    <state width="1877" height="226" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.0.1920.1040@2560.0.1920.1040" timestamp="1599980551156" />
-    <state width="1877" height="226" key="GridCell.Tab.0.center" timestamp="1599983433894">
+    <state width="2517" height="142" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1600097402262" />
+    <state width="1877" height="142" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.0.1920.1040@2560.0.1920.1040" timestamp="1600096467679" />
+    <state width="2517" height="142" key="GridCell.Tab.0.center" timestamp="1600097402262">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1877" height="226" key="GridCell.Tab.0.center/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1599983433894" />
-    <state width="1877" height="226" key="GridCell.Tab.0.center/0.0.2560.1400/2560.0.1920.1040@2560.0.1920.1040" timestamp="1599980551156" />
-    <state width="1877" height="226" key="GridCell.Tab.0.left" timestamp="1599983433894">
+    <state width="2517" height="142" key="GridCell.Tab.0.center/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1600097402262" />
+    <state width="1877" height="142" key="GridCell.Tab.0.center/0.0.2560.1400/2560.0.1920.1040@2560.0.1920.1040" timestamp="1600096467679" />
+    <state width="2517" height="142" key="GridCell.Tab.0.left" timestamp="1600097402262">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1877" height="226" key="GridCell.Tab.0.left/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1599983433894" />
-    <state width="1877" height="226" key="GridCell.Tab.0.left/0.0.2560.1400/2560.0.1920.1040@2560.0.1920.1040" timestamp="1599980551156" />
-    <state width="1877" height="226" key="GridCell.Tab.0.right" timestamp="1599983433895">
+    <state width="2517" height="142" key="GridCell.Tab.0.left/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1600097402262" />
+    <state width="1877" height="142" key="GridCell.Tab.0.left/0.0.2560.1400/2560.0.1920.1040@2560.0.1920.1040" timestamp="1600096467678" />
+    <state width="2517" height="142" key="GridCell.Tab.0.right" timestamp="1600097402262">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1877" height="226" key="GridCell.Tab.0.right/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1599983433895" />
-    <state width="1877" height="226" key="GridCell.Tab.0.right/0.0.2560.1400/2560.0.1920.1040@2560.0.1920.1040" timestamp="1599980551156" />
-    <state width="1877" height="226" key="GridCell.Tab.1.bottom" timestamp="1599983433895">
+    <state width="2517" height="142" key="GridCell.Tab.0.right/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1600097402262" />
+    <state width="1877" height="142" key="GridCell.Tab.0.right/0.0.2560.1400/2560.0.1920.1040@2560.0.1920.1040" timestamp="1600096467679" />
+    <state width="2517" height="142" key="GridCell.Tab.1.bottom" timestamp="1600097402262">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1877" height="226" key="GridCell.Tab.1.bottom/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1599983433895" />
-    <state width="1877" height="226" key="GridCell.Tab.1.bottom/0.0.2560.1400/2560.0.1920.1040@2560.0.1920.1040" timestamp="1599980551157" />
-    <state width="1877" height="226" key="GridCell.Tab.1.center" timestamp="1599983433895">
+    <state width="2517" height="142" key="GridCell.Tab.1.bottom/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1600097402262" />
+    <state width="1877" height="142" key="GridCell.Tab.1.bottom/0.0.2560.1400/2560.0.1920.1040@2560.0.1920.1040" timestamp="1600096467679" />
+    <state width="2517" height="142" key="GridCell.Tab.1.center" timestamp="1600097402262">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1877" height="226" key="GridCell.Tab.1.center/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1599983433895" />
-    <state width="1877" height="226" key="GridCell.Tab.1.center/0.0.2560.1400/2560.0.1920.1040@2560.0.1920.1040" timestamp="1599980551157" />
-    <state width="1877" height="226" key="GridCell.Tab.1.left" timestamp="1599983433895">
+    <state width="2517" height="142" key="GridCell.Tab.1.center/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1600097402262" />
+    <state width="1877" height="142" key="GridCell.Tab.1.center/0.0.2560.1400/2560.0.1920.1040@2560.0.1920.1040" timestamp="1600096467679" />
+    <state width="2517" height="142" key="GridCell.Tab.1.left" timestamp="1600097402262">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1877" height="226" key="GridCell.Tab.1.left/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1599983433895" />
-    <state width="1877" height="226" key="GridCell.Tab.1.left/0.0.2560.1400/2560.0.1920.1040@2560.0.1920.1040" timestamp="1599980551156" />
-    <state width="1877" height="226" key="GridCell.Tab.1.right" timestamp="1599983433895">
+    <state width="2517" height="142" key="GridCell.Tab.1.left/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1600097402262" />
+    <state width="1877" height="142" key="GridCell.Tab.1.left/0.0.2560.1400/2560.0.1920.1040@2560.0.1920.1040" timestamp="1600096467679" />
+    <state width="2517" height="142" key="GridCell.Tab.1.right" timestamp="1600097402262">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="1877" height="226" key="GridCell.Tab.1.right/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1599983433895" />
-    <state width="1877" height="226" key="GridCell.Tab.1.right/0.0.2560.1400/2560.0.1920.1040@2560.0.1920.1040" timestamp="1599980551157" />
+    <state width="2517" height="142" key="GridCell.Tab.1.right/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1600097402262" />
+    <state width="1877" height="142" key="GridCell.Tab.1.right/0.0.2560.1400/2560.0.1920.1040@2560.0.1920.1040" timestamp="1600096467679" />
     <state x="621" y="292" width="998" height="823" key="SettingsEditor" timestamp="1599921678305">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="621" y="292" key="SettingsEditor/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1599921678305" />
     <state x="3026" y="217" width="998" height="823" key="SettingsEditor/0.0.2560.1400/2560.0.1920.1040@2560.0.1920.1040" timestamp="1599363625309" />
-    <state x="872" y="421" key="Vcs.Push.Dialog.v2" timestamp="1599923602650">
+    <state x="872" y="421" key="Vcs.Push.Dialog.v2" timestamp="1600007751149">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="872" y="421" key="Vcs.Push.Dialog.v2/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1599923602650" />
-    <state x="3200" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1599964154637">
+    <state x="872" y="421" key="Vcs.Push.Dialog.v2/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1600007751149" />
+    <state x="3200" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1600092261901">
       <screen x="2560" y="0" width="1920" height="1040" />
     </state>
-    <state x="3200" y="344" key="com.intellij.ide.util.TipDialog/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1599964154637" />
+    <state x="3200" y="344" key="com.intellij.ide.util.TipDialog/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1600092261901" />
     <state x="3200" y="344" key="com.intellij.ide.util.TipDialog/0.0.2560.1400/2560.0.1920.1040@2560.0.1920.1040" timestamp="1599894945461" />
     <state x="1073" y="376" key="com.intellij.openapi.editor.actions.MultiplePasteAction$ClipboardContentChooser" timestamp="1599364661277">
       <screen x="0" y="0" width="2560" height="1400" />
@@ -311,9 +331,9 @@
       <screen x="2560" y="0" width="1920" height="1040" />
     </state>
     <state x="2560" y="0" width="1465" height="1127" maximized="true" key="dock-window-1/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1599575736966" />
-    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1599895574900">
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1600093126180">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1599895574900" />
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1600093126180" />
   </component>
 </project>
