@@ -2,16 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="98010c9e-cde7-42e9-8c65-90f18d717f16" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/newcoder/community/annotation/LoginRequired.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/newcoder/community/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/newcoder/community/controller/interceptor/LoginRequiredInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/newcoder/community/util/SensitiveFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/sensitive-words.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/newcoder/community/SensitiveTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/community.iml" beforeDir="false" afterPath="$PROJECT_DIR$/community.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/newcoder/community/config/WebMvcConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/newcoder/community/config/WebMvcConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/newcoder/community/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/newcoder/community/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/site/setting.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/site/setting.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/newcoder/community/service/UserService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/newcoder/community/service/UserService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/site/setting.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/site/setting.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,25 +51,26 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RebelAgentSelection">
     <selection>jr</selection>
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IdeaPro\newcoder\community\src\main\resources" />
+      <recent name="D:\IdeaPro\newcoder\community\src\main\resources\templates" />
+      <recent name="D:\IdeaPro\newcoder\community\src\main\resources\static" />
+      <recent name="D:\IdeaPro\newcoder\community\src\main\resources\mapper" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\IdeaPro\newcoder\community\src\main\resources\templates\web" />
       <recent name="D:\IdeaPro\newcoder\community\src\main\java\com\newcoder\community" />
       <recent name="D:\IdeaPro\newcoder\community" />
     </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\IdeaPro\newcoder\community\src\main\resources\templates" />
-      <recent name="D:\IdeaPro\newcoder\community\src\main\resources\static" />
-      <recent name="D:\IdeaPro\newcoder\community\src\main\resources\mapper" />
-    </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.CommunityApplication">
+  <component name="RunManager" selected="JUnit.SensitiveTests.testSensitiveFilter">
     <configuration name="MailTests.testHtmlMail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="community" />
       <extension name="coverage">
@@ -138,7 +135,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MapperTests.testSelectUser (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="SensitiveTests.testSensitiveFilter" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="community" />
       <extension name="coverage">
         <pattern>
@@ -147,8 +144,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.newcoder.community" />
-      <option name="MAIN_CLASS_NAME" value="com.newcoder.community.MapperTests" />
-      <option name="METHOD_NAME" value="testSelectUser" />
+      <option name="MAIN_CLASS_NAME" value="com.newcoder.community.SensitiveTests" />
+      <option name="METHOD_NAME" value="testSensitiveFilter" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -163,11 +160,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.SensitiveTests.testSensitiveFilter" />
         <item itemvalue="JUnit.MapperTests.testInsertLoginTicket" />
         <item itemvalue="JUnit.MailTests.testHtmlMail" />
         <item itemvalue="JUnit.MailTests.testTextMail" />
         <item itemvalue="JUnit.MapperTests.testSelectPosts" />
-        <item itemvalue="JUnit.MapperTests.testSelectUser (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -201,7 +198,7 @@
       <workItem from="1599894944373" duration="13623000" />
       <workItem from="1599964153452" duration="8599000" />
       <workItem from="1600092261171" duration="5750000" />
-      <workItem from="1600261926328" duration="3810000" />
+      <workItem from="1600261926328" duration="5096000" />
     </task>
     <task id="LOCAL-00001" summary="rafeal：项目第一次提交">
       <created>1599922428397</created>
@@ -245,7 +242,14 @@
       <option name="project" value="LOCAL" />
       <updated>1600263659687</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="rafeal：通过定义注解，实现不登陆就无法进入后续页面的逻辑 + 实现上传头像功能">
+      <created>1600265915653</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1600265915653</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -257,7 +261,8 @@
     <MESSAGE value="rafeal：验证码" />
     <MESSAGE value="rafeal：增加登入登出功能" />
     <MESSAGE value="rafeal：新增拦截器、请求获取cookie得到用户登录凭证。从而得到用户信息，并将其设置到模板引擎中。" />
-    <option name="LAST_COMMIT_MESSAGE" value="rafeal：新增拦截器、请求获取cookie得到用户登录凭证。从而得到用户信息，并将其设置到模板引擎中。" />
+    <MESSAGE value="rafeal：通过定义注解，实现不登陆就无法进入后续页面的逻辑 + 实现上传头像功能" />
+    <option name="LAST_COMMIT_MESSAGE" value="rafeal：通过定义注解，实现不登陆就无法进入后续页面的逻辑 + 实现上传头像功能" />
   </component>
   <component name="WindowStateProjectService">
     <state x="872" y="367" key="#HTTP_Proxy" timestamp="1600096981232">
@@ -272,64 +277,64 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1054" y="558" width="451" height="293" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1599377183318" />
-    <state x="777" y="289" width="1322" height="1039" key="CommitChangelistDialog2" timestamp="1600263689362">
+    <state x="521" y="161" width="1322" height="1039" key="CommitChangelistDialog2" timestamp="1600265914977">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="777" y="289" width="1322" height="1039" key="CommitChangelistDialog2/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1600263689362" />
+    <state x="521" y="161" width="1322" height="1039" key="CommitChangelistDialog2/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1600265914977" />
     <state x="2737" y="112" width="1305" height="843" key="CommitChangelistDialog2/0.0.2560.1400/2560.0.1920.1040@2560.0.1920.1040" timestamp="1599980632977" />
     <state x="1060" y="455" key="FileChooserDialogImpl" timestamp="1599921905584">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1060" y="455" key="FileChooserDialogImpl/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1599921905584" />
-    <state width="2517" height="456" key="GridCell.Tab.0.bottom" timestamp="1600265631627">
+    <state width="2517" height="394" key="GridCell.Tab.0.bottom" timestamp="1600267160490">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="456" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1600265631627" />
+    <state width="2517" height="394" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1600267160490" />
     <state width="1877" height="142" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.0.1920.1040@2560.0.1920.1040" timestamp="1600096467679" />
-    <state width="2517" height="456" key="GridCell.Tab.0.center" timestamp="1600265631627">
+    <state width="2517" height="394" key="GridCell.Tab.0.center" timestamp="1600267160490">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="456" key="GridCell.Tab.0.center/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1600265631627" />
+    <state width="2517" height="394" key="GridCell.Tab.0.center/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1600267160490" />
     <state width="1877" height="142" key="GridCell.Tab.0.center/0.0.2560.1400/2560.0.1920.1040@2560.0.1920.1040" timestamp="1600096467679" />
-    <state width="2517" height="456" key="GridCell.Tab.0.left" timestamp="1600265631627">
+    <state width="2517" height="394" key="GridCell.Tab.0.left" timestamp="1600267160490">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="456" key="GridCell.Tab.0.left/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1600265631627" />
+    <state width="2517" height="394" key="GridCell.Tab.0.left/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1600267160490" />
     <state width="1877" height="142" key="GridCell.Tab.0.left/0.0.2560.1400/2560.0.1920.1040@2560.0.1920.1040" timestamp="1600096467678" />
-    <state width="2517" height="456" key="GridCell.Tab.0.right" timestamp="1600265631627">
+    <state width="2517" height="394" key="GridCell.Tab.0.right" timestamp="1600267160490">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="456" key="GridCell.Tab.0.right/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1600265631627" />
+    <state width="2517" height="394" key="GridCell.Tab.0.right/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1600267160490" />
     <state width="1877" height="142" key="GridCell.Tab.0.right/0.0.2560.1400/2560.0.1920.1040@2560.0.1920.1040" timestamp="1600096467679" />
-    <state width="2517" height="456" key="GridCell.Tab.1.bottom" timestamp="1600265631627">
+    <state width="2517" height="456" key="GridCell.Tab.1.bottom" timestamp="1600267100132">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="456" key="GridCell.Tab.1.bottom/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1600265631627" />
+    <state width="2517" height="456" key="GridCell.Tab.1.bottom/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1600267100132" />
     <state width="1877" height="142" key="GridCell.Tab.1.bottom/0.0.2560.1400/2560.0.1920.1040@2560.0.1920.1040" timestamp="1600096467679" />
-    <state width="2517" height="456" key="GridCell.Tab.1.center" timestamp="1600265631627">
+    <state width="2517" height="456" key="GridCell.Tab.1.center" timestamp="1600267100132">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="456" key="GridCell.Tab.1.center/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1600265631627" />
+    <state width="2517" height="456" key="GridCell.Tab.1.center/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1600267100132" />
     <state width="1877" height="142" key="GridCell.Tab.1.center/0.0.2560.1400/2560.0.1920.1040@2560.0.1920.1040" timestamp="1600096467679" />
-    <state width="2517" height="456" key="GridCell.Tab.1.left" timestamp="1600265631627">
+    <state width="2517" height="456" key="GridCell.Tab.1.left" timestamp="1600267100132">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="456" key="GridCell.Tab.1.left/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1600265631627" />
+    <state width="2517" height="456" key="GridCell.Tab.1.left/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1600267100132" />
     <state width="1877" height="142" key="GridCell.Tab.1.left/0.0.2560.1400/2560.0.1920.1040@2560.0.1920.1040" timestamp="1600096467679" />
-    <state width="2517" height="456" key="GridCell.Tab.1.right" timestamp="1600265631627">
+    <state width="2517" height="456" key="GridCell.Tab.1.right" timestamp="1600267100132">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="456" key="GridCell.Tab.1.right/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1600265631627" />
+    <state width="2517" height="456" key="GridCell.Tab.1.right/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1600267100132" />
     <state width="1877" height="142" key="GridCell.Tab.1.right/0.0.2560.1400/2560.0.1920.1040@2560.0.1920.1040" timestamp="1600096467679" />
     <state x="621" y="292" width="998" height="823" key="SettingsEditor" timestamp="1599921678305">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="621" y="292" key="SettingsEditor/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1599921678305" />
     <state x="3026" y="217" width="998" height="823" key="SettingsEditor/0.0.2560.1400/2560.0.1920.1040@2560.0.1920.1040" timestamp="1599363625309" />
-    <state x="872" y="421" key="Vcs.Push.Dialog.v2" timestamp="1600263662461">
+    <state x="872" y="421" key="Vcs.Push.Dialog.v2" timestamp="1600265922554">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="872" y="421" key="Vcs.Push.Dialog.v2/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1600263662461" />
+    <state x="872" y="421" key="Vcs.Push.Dialog.v2/0.0.2560.1400/2560.0.1920.1040@0.0.2560.1400" timestamp="1600265922554" />
     <state x="3200" y="344" key="com.intellij.ide.util.TipDialog" timestamp="1600261950682">
       <screen x="2560" y="0" width="1920" height="1040" />
     </state>
