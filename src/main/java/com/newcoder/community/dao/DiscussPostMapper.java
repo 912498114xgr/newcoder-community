@@ -17,4 +17,6 @@ public interface DiscussPostMapper {
     //查询帖子的总数
     int selectDiscussPostRows(@Param("userId") int userId);
 
+    int insertDiscussPost(DiscussPost discussPost);
+
 }
